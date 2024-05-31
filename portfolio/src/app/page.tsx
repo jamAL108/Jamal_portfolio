@@ -11,7 +11,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="ml-[100px] w-[calc(100%_-_100px)] flex base:flex-col bl:flex-row ">
+    <div className="bl:ml-[100px] base:w-full bl:w-[calc(100%_-_100px)] flex base:flex-col bl:flex-row ">
       <div className="flex-1 flex flex-col px-14 py-[4.5rem] ">
         <div className="w-full flex flex-col gap-9">
           <img src='/images/P2.png' alt="afdv" className="w-[88%] h-[230px] rounded-3xl" />
@@ -73,15 +73,15 @@ export default function Home() {
 
         <div className="w-full flex flex-col gap-4 my-5">
           <p className="font-[600] text-xl">Latest Projects</p>
-          <div className="w-full relative flex flex-wrap py-8 gap-5">
+          <div className="w-full base:hidden bl:flex relative  flex-wrap py-8 gap-5">
 
-            <div className="w-full relative  flex base:flex-col bl:flex-row gap-5">
+            <div className="w-full relative  flex gap-5">
               <PinContainer
                 title="Working link"
                 href="https://github.com/jamal108"
               >
                 <div className="w-[360px]  relative  rounded-lg px-5 py-5 bg-background flex flex-col gap-3">
-                  <div className="w-full !h-[190px] rounded-md bg-accent flex justify-center items-center mb-2">
+                  <div className="w-full  h-[190px] rounded-md bg-accent flex justify-center items-center mb-2">
                     <img src="/images/verifaceScreen.png" alt="cdfv" className="w-[92%] transform rotate-[4deg] rounded-md h-[170px]" />
                   </div>
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
@@ -124,8 +124,7 @@ export default function Home() {
                 </div>
               </PinContainer>
             </div>
-
-            <div className="w-full relative flex base:flex-col bl:flex-row gap-5 mt-[100px]">
+            <div className="w-full relative flex base:flex-col bl:flex-row base:gap-[100px] bl:gap-5 mt-[100px]">
               <PinContainer
                 // className="bl:mt-[200px]"
                 title="Working link"
@@ -175,15 +174,12 @@ export default function Home() {
                 </div>
               </PinContainer>
             </div>
-
-
+            <h2 className=" mt-[80px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
           </div>
         </div>
-
       </div>
       <div className="base:w-full bl:w-[300px]">
         <div className="">
-
         </div>
       </div>
     </div>

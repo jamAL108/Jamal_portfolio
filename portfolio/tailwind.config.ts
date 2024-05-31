@@ -21,6 +21,7 @@ const config: Config = {
       screens: {
         "2xl": "1400px",
         "base": "0px",
+        "tablet":"750px",
         "bl": "1012px"
       },
     },
@@ -28,6 +29,7 @@ const config: Config = {
       screens: {
         "2xl": "1400px",
         "base": "0px",
+        "tablet":"750px",
         "bl": "1012px"
       },
       colors: {

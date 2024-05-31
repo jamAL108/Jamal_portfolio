@@ -26,8 +26,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="w-[100%] max-w-[100%] overflow-x-hidden overflow-y-auto flex items-center flex-col">
-            <div className="w-[min(1300px,100vw)] flex ">
+          <div className="w-[100%] max-w-[100%] !overflow-x-hidden overflow-y-auto flex items-center flex-col">
+            <div className="w-[min(1300px,100vw)] flex !overflow-x-hidden ">
               <Navbar />
               {children}
             </div>
