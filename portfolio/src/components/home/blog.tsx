@@ -8,11 +8,12 @@ import Link from 'next/link'
 
 export default function Blog() {
     const [blogs, setBlogs] = useState<any>([])
+    const [loader, setLoader] = useState<boolean>(true)
     useEffect(() => {
         getBlogData()
     }, [])
 
-    async function getBlogData() {
+    const getBlogData = async () => {
         console.log("MEOW")
         const supabase = clientConnectionWithSupabase()
         let { data: qwertymno_blogs, error } = await supabase
@@ -20,16 +21,18 @@ export default function Blog() {
             .select('*')
             .order('created_at', { ascending: false })
             .range(0, 2)
-
-        let dataaa: any = []
         console.log(error)
         if (error === null) {
             setBlogs(qwertymno_blogs)
+            setLoader(false)
+        } else {
+            setLoader(false)
         }
     }
+    
     return (
         <div className="w-full flex flex-col gap-2">
-            {blogs.length === 0 && (
+            {loader === true && (
                 <div className='w-full flex gap-5 my-1'>
                     <div className='w-[150px] flex justify-center items-center'>
                         <Skeleton className='w-[100px] h-[70px]' />
@@ -43,7 +46,7 @@ export default function Blog() {
                     </div>
                 </div>
             )}
-            {blogs.length !== 0 && blogs.map((item: any, idx: any) => (
+            {loader === false && blogs.length !== 0 && blogs.map((item: any, idx: any) => (
                 <>
                     <div key={idx} className='w-full flex base:gap-4 bl:gap-8 bl:pl-4 py-5'>
                         <div className='base:w-[80px] bl:w-[100px] flex justify-center items-center'>
