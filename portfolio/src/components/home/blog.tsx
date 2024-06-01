@@ -4,6 +4,7 @@ import clientConnectionWithSupabase from '@/lib/supabase'
 import { Skeleton } from "@/components/ui/skeleton"
 import { Separator } from "@/components/ui/separator"
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link'
 
 export default function Blog() {
     const [blogs, setBlogs] = useState<any>([])
@@ -44,9 +45,9 @@ export default function Blog() {
             )}
             {blogs.length !== 0 && blogs.map((item: any, idx: any) => (
                 <>
-                    <div key={idx} className='w-full flex gap-8 pl-4 py-5'>
-                        <div className='w-[100px] flex justify-center items-center'>
-                            <img src={item.coverImage} alt='awsdf' className='w-[100px] h-[70px] rounded-lg' />
+                    <div key={idx} className='w-full flex base:gap-4 bl:gap-8 bl:pl-4 py-5'>
+                        <div className='base:w-[80px] bl:w-[100px] flex justify-center items-center'>
+                            <img src={item.coverImage} alt='awsdf' className='base:w-[70px] base:h-[60px] bl:w-[100px] bl:h-[70px] rounded-lg' />
                         </div>
                         <div className='flex-1 relative flex pr-4 flex-col gap-2.5 justify-center text-xs'>
                             <div className='flex w-full gap-3 items-center px-1'>
@@ -65,6 +66,7 @@ export default function Blog() {
                     <Separator />
                 </>
             ))}
+            <h2 className='mt-[20px]'>See a list of all my Blogs <Link href={'https://qwertymno.vercel.app/'} className='text-main cursor-pointer hover:underline'>On my blogs page</Link></h2>
         </div>
     )
 }

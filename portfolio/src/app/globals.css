@@ -67,3 +67,38 @@
   html{
     overflow-x: hidden;
   }
+
+
+  @keyframes bang {
+    from {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+    }
+  }
+  .hoverme {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .hoverme span {
+    color: #333;
+    font-size: .9em;
+  }
+
+  .hoverme i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 8px;
+    background: red;
+    opacity: 0;
+  }
+
+
+  .backdrop{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+  }

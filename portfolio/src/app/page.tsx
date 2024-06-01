@@ -8,17 +8,20 @@ import Link from 'next/link'
 import Blog from '@/components/home/blog'
 import { PinContainer } from "@/components/ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
+import Boiler from '@/components/step'
+import Thankyou from "@/components/thankyou";
 
 export default function Home() {
   return (
     <div className="bl:ml-[100px] base:w-full bl:w-[calc(100%_-_100px)] flex base:flex-col bl:flex-row ">
-      <div className="flex-1 flex flex-col px-14 py-[4.5rem] ">
+
+      <div className="base:w-full bl:min-w-[72%] bl:max-w-[72%] bl:w-[72%] flex flex-col base:px-6 bl:px-14 py-[4.5rem] ">
         <div className="w-full flex flex-col gap-9">
-          <img src='/images/P2.png' alt="afdv" className="w-[88%] h-[230px] rounded-3xl" />
-          <div className="w-[93%] flex flex-col gap-[13px] mt-1">
+          <img src='/images/P2.png' alt="afdv" className="base:w-full bl:w-[88%] bl:h-[230px] base:rounded-xl bl:rounded-3xl" />
+          <div className="w-[93%] flex flex-col gap-[13px] bl:mt-1">
             <h2 className="text-xl font-[550] ">Hi, I&lsquo;m <span className="text-main">Jamal Mydeen</span></h2>
-            <h1 className="text-5xl font-bold leading-[50px]">I develop <span className="relative text-[#16a34a]"><span className="z-[100000]">full-stack</span> <div className="absolute top-3 transform rotate-[-3deg] left-[-5px] z-[-10] bg-[#10292f]  w-full h-[90%] "></div></span> solutions that people <span className="text-pinky">adore.</span></h1>
-            <p className="text-muted-foreground text-lg">Experienced Developer passionate about crafting innovative tech solutions . Outside of tech, I enjoy reading, writing, and exploring new destinations.</p>
+            <h1 className="base:text-[1.9rem] bl:text-5xl font-bold base:leading-[45px] bl:leading-[50px]">I develop <span className="relative text-[#16a34a]"><span className="z-[100000]">full-stack</span> <div className="absolute top-3 transform rotate-[-3deg] left-[-5px] z-[-10] bg-[#10292f]  w-full h-[90%] "></div></span> solutions that people <span className="text-pinky">adore.</span></h1>
+            <p className="text-muted-foreground base:text-md bl:text-lg">Experienced Developer passionate about crafting innovative tech solutions . Outside of tech, I enjoy reading, writing, and exploring new destinations.</p>
           </div>
         </div>
         <div className="w-full h-[60px]">
@@ -41,6 +44,8 @@ export default function Home() {
             <HiOutlineMailOpen className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
         </div>
+
+
         <div className="w-full flex flex-col gap-4 my-5">
           <p className="font-[600] text-xl">Latest Blogs</p>
           <Blog />
@@ -49,8 +54,6 @@ export default function Home() {
         <div className="w-full flex flex-col gap-4 my-8">
           <p className="font-[600] text-xl">Achievements</p>
           <div className="w-full flex flex-wrap py-3 gap-8">
-
-
             <div className="w-[360px] h-[220px] bg-[url('/images/hackthisfall.jpg')] transform duration-300 ease-out rotate-[2deg] hover:rotate-[0deg] relative bg-cover">
               <div className="absolute z-[0] inset-0 bg-black opacity-60"></div>
               <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660]">HackThisFall</h1>
@@ -178,10 +181,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="base:w-full bl:w-[300px]">
-        <div className="">
+
+
+
+
+
+
+      <div className='base:w-full pb-[100px] overflow-hidden bl:min-w-[28%] bl:max-w-[28%] bl:w-[28%] items-center flex flex-col gap-10 pt-40'>
+        <div className="base:w-full bl:w-[90%] overflow-hidden flex flex-col items-center gap-10 ">
+          <Boiler />
+          <Thankyou />
         </div>
-      </div>
+      </div> 
+
     </div>
   );
 }
