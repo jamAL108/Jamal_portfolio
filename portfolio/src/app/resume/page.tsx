@@ -60,8 +60,6 @@ const Page = () => {
         <div className="w-full px-6 flex flex-col gap-4 mt-16">
           <p className="font-[600] text-2xl">Work Experience</p>
           <div className='w-full pr-8 flex flex-col relative pt-4'>
-
-
             <div className='relative w-full flex'>
               <div className='flex items-start before:absolute before:left-0 before:h-full before:w-px before:bg-slate-200 before:dark:bg-slate-800 before:self-start before:ml-[28px] before:-translate-x-1/2 before:translate-y-8 before:group-last-of-type:hidden'>
                 <div className='absolute rounded-full left-0 h-14 w-14 flex items-center justify-center border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 bg-white dark:bg-slate-900 '>

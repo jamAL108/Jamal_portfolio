@@ -10,6 +10,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 import Boiler from '@/components/step'
 import Thankyou from "@/components/thankyou";
+import Projects from "@/components/home/projects";
 
 export default function Home() {
   return (
@@ -179,6 +180,8 @@ export default function Home() {
             </div>
             <h2 className=" mt-[80px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
           </div>
+          <Projects />
+          <h2 className=" mt-[30px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
         </div>
       </div>
 
@@ -187,12 +190,12 @@ export default function Home() {
 
 
 
-      <div className='base:w-full pb-[100px] overflow-hidden bl:min-w-[28%] bl:max-w-[28%] bl:w-[28%] items-center flex flex-col gap-10 pt-40'>
+      <div className='base:w-full pb-[100px] overflow-hidden bl:min-w-[28%] bl:max-w-[28%] bl:w-[28%] items-center flex flex-col gap-10 basse:pt-5 bl:pt-40'>
         <div className="base:w-full bl:w-[90%] overflow-hidden flex flex-col items-center gap-10 ">
           <Boiler />
           <Thankyou />
         </div>
-      </div> 
+      </div>
 
     </div>
   );
