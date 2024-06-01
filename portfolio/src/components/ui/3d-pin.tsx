@@ -74,7 +74,7 @@ export const PinPerspective = ({
           onClick={(e)=>{
                console.log("MEOWW")
           }} 
-          href={'https://github.com/jamal108'}
+          href={href || 'https://jamal-mydeen.vercel.app'}
             className="relative flex z-20 space-x-2 items-center  rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 "
           >
             <span className="relative z-20 text-white text-xs font-bold inline-block py-0.5">

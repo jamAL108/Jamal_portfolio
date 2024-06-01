@@ -32,21 +32,19 @@ export default function Home() {
           <Link href={'https://github.com/jamal108'}>
             <SiGithub className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
-          <Link href={'https://github.com/jamal108'}>
+          <Link href={'https://x.com/jamal_twts'}>
             <FaXTwitter className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
-          <Link href={'https://github.com/jamal108'}>
+          <Link href={'https://linkedin.com/in/jamal108'}>
             <SlSocialLinkedin className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
-          <Link href={'https://github.com/jamal108'}>
+          <Link href={'https://instagram.com/jamal.tsx'}>
             <FaInstagram className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
-          <Link href={'https://github.com/jamal108'}>
+          <Link href={'mailto:jamalmohideen971@gmail.com'}>
             <HiOutlineMailOpen className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
         </div>
-
-
         <div className="w-full flex flex-col gap-4 my-5">
           <p className="font-[600] text-xl">Latest Blogs</p>
           <Blog />
@@ -82,7 +80,7 @@ export default function Home() {
             <div className="w-full relative  flex gap-5">
               <PinContainer
                 title="Working link"
-                href="https://github.com/jamal108"
+                href="https://github.com/jamAL108/veriface_nextjs"
               >
                 <div className="w-[360px]  relative  rounded-lg px-5 py-5 bg-background flex flex-col gap-3">
                   <div className="w-full  h-[190px] rounded-md bg-accent flex justify-center items-center mb-2">
@@ -106,7 +104,7 @@ export default function Home() {
 
               <PinContainer
                 title="Working link"
-                href="https://github.com/jamal108"
+                href="https://github.com/jamAL108/StudyHub"
               >
                 <div className="w-[360px] relative  rounded-lg px-5 py-5 bg-background flex flex-col gap-3">
                   <div className="w-full !h-[190px] rounded-md bg-accent flex justify-center items-center mb-2">
@@ -132,7 +130,7 @@ export default function Home() {
               <PinContainer
                 // className="bl:mt-[200px]"
                 title="Working link"
-                href="https://github.com/jamal108"
+                href="https://github.com/jamAL108/soulmind"
               >
                 <div className="w-[360px] relative  rounded-lg px-5 py-5 bg-background flex flex-col gap-3">
                   <div className="w-full !h-[190px] rounded-md bg-accent flex justify-center items-center mb-2">
@@ -156,7 +154,7 @@ export default function Home() {
               <PinContainer
                 // className="bl:mt-[200px]"
                 title="Working link"
-                href="https://github.com/jamal108"
+                href="https://github.com/jamAL108/MetaTunes"
               >
                 <div className="w-[360px] relative  rounded-lg px-5 py-5 bg-background flex flex-col gap-3">
                   <div className="w-full !h-[190px] rounded-md bg-accent flex justify-center items-center mb-2">
@@ -181,7 +179,7 @@ export default function Home() {
             <h2 className=" mt-[80px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
           </div>
           <Projects />
-          <h2 className=" mt-[30px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
+          <h2 className="bl:hidden mt-[30px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
         </div>
       </div>
 

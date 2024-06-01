@@ -9,80 +9,64 @@ const Page = () => {
 
   const data = [
     {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/veriface.png",
-      name: "Veriface",
-      width: 45,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-       and lip syncing to identify deepfakes.`
+        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/veriface.png",
+        name: "Veriface",
+        width: 45,
+        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
+       and lip syncing to identify deepfakes.`,
+       link:"https://github.com/jamAL108/veriface_nextjs"
     }, {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
-      name: "VidchatAI",
-      width: 33.1,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
+        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
+        name: "VidchatAI",
+        width: 45,
+        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
+        and lip syncing to identify deepfakes.`,
+        link:"https://github.com/jamAL108/StudyHub"
     }, {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
-      name: "Soulmind",
-      width: 95,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
+        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
+        name: "Soulmind",
+        width: 95,
+        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
+        and lip syncing to identify deepfakes.`,
+        link:"https://github.com/jamAL108/soulmind"
     }, {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
-      name: "Meta-tunes",
-      width: 28,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
+        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
+        name: "Meta-tunes",
+        width: 28,
+        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
+        and lip syncing to identify deepfakes.`,
+        link:"https://github.com/jamAL108/MetaTunes"
     },
-        {
+    {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/veriface.png",
       name: "Veriface",
       width: 45,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-       and lip syncing to identify deepfakes.`
-    }, {
+     and lip syncing to identify deepfakes.`,
+     link:"https://github.com/jamAL108/veriface_nextjs"
+  }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
       name: "VidchatAI",
-      width: 33.1,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
-    }, {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
-      name: "Soulmind",
-      width: 95,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
-    }, {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
-      name: "Meta-tunes",
-      width: 28,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
-    },    {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/veriface.png",
-      name: "Veriface",
       width: 45,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-       and lip syncing to identify deepfakes.`
-    }, {
-      coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
-      name: "VidchatAI",
-      width: 33.1,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
-    }, {
+      and lip syncing to identify deepfakes.`,
+      link:"https://github.com/jamAL108/StudyHub"
+  }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
       name: "Soulmind",
       width: 95,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
-    }, {
+      and lip syncing to identify deepfakes.`,
+      link:"https://github.com/jamAL108/soulmind"
+  }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
       name: "Meta-tunes",
       width: 28,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`
-    }
-  ]
+      and lip syncing to identify deepfakes.`,
+      link:"https://github.com/jamAL108/MetaTunes"
+  }
+]
 
   return (
     <div className="bl:ml-[100px] !overflow-x-hidden !overflow-y-auto  base:w-full bl:w-[calc(100%_-_120px)] flex base:flex-col bl:flex-row ">
