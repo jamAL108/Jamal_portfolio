@@ -21,7 +21,7 @@ export default function Home() {
           <img src='/images/P2.png' alt="afdv" className="base:w-full bl:w-[88%] bl:h-[230px] base:rounded-xl bl:rounded-3xl" />
           <div className="w-[93%] flex flex-col gap-[13px] bl:mt-1">
             <h2 className="text-xl font-[550] ">Hi, I&lsquo;m <span className="text-main">Jamal Mydeen</span></h2>
-            <h1 className="base:text-[1.9rem] bl:text-5xl font-bold base:leading-[45px] bl:leading-[50px]">I develop <span className="relative text-[#16a34a]"><span className="z-[100000]">full-stack</span> <div className="absolute top-3 transform rotate-[-3deg] left-[-5px] z-[-10] bg-[#10292f]  w-full h-[90%] "></div></span> solutions that people <span className="text-pinky">adore.</span></h1>
+            <h1 className="base:text-[1.9rem] bl:text-5xl font-bold base:leading-[45px] bl:leading-[50px]">I develop <span className="relative text-[#16a34a]"><span className="z-[100000]">full-stack</span> <div className="absolute top-3 transform rotate-[-3deg] left-[-5px] z-[-10] dark:bg-[#10292f] bg-[#f8fefa]  w-full h-[90%] "></div></span> solutions that people <span className="text-pinky">adore.</span></h1>
             <p className="text-muted-foreground base:text-md bl:text-lg">Experienced Developer passionate about crafting innovative tech solutions . Outside of tech, I enjoy reading, writing, and exploring new destinations.</p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Home() {
           <div className="w-full flex flex-wrap py-3 gap-8">
             <div className="w-[360px] h-[220px] bg-[url('/images/hackthisfall.jpg')] transform duration-300 ease-out rotate-[2deg] hover:rotate-[0deg] relative bg-cover">
               <div className="absolute z-[0] inset-0 bg-black opacity-60"></div>
-              <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660]">HackThisFall</h1>
+              <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660] text-white ">HackThisFall</h1>
               <div className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px]">
 
               </div>
@@ -63,7 +63,7 @@ export default function Home() {
 
             <div className="w-[360px] h-[220px] bg-[url('/images/hackthisfall.jpg')] transform duration-300 ease-out rotate-[-2deg] hover:rotate-[0deg] relative bg-cover">
               <div className="absolute z-[0] inset-0 bg-black opacity-60"></div>
-              <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660]">HackThisFall</h1>
+              <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660] text-white ">HackThisFall</h1>
               <div className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px]">
 
               </div>
@@ -182,10 +182,6 @@ export default function Home() {
           <h2 className="bl:hidden mt-[30px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
         </div>
       </div>
-
-
-
-
 
 
       <div className='base:w-full pb-[100px] overflow-hidden bl:min-w-[28%] bl:max-w-[28%] bl:w-[28%] items-center flex flex-col gap-10 basse:pt-5 bl:pt-40'>
