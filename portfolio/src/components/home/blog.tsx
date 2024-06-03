@@ -63,7 +63,7 @@ export default function Blog() {
                             </div>
                             <h2 className='text-[1.15rem] leading-[25px] font-[660]'>{item.title}</h2>
                             <h2 className='text-sm text-muted-foreground'>{item.excerts}</h2>
-                            <Link href={`https:qwertymno.vercel.app/blog/${item.URL_prefix}-${item.id}`} className='transform duration-300 cursor-pointer ease-out hover:translate-x-[10px] absolute bottom-[-5px] right-[0px]'>
+                            <Link href={`https://qwertymno.vercel.app/blog/${item.URL_prefix}-${item.id}`} className='transform duration-300 cursor-pointer ease-out hover:translate-x-[10px] absolute bottom-[-5px] right-[0px]'>
                                 <ArrowRight className='text-main h-5 w-5' />
                             </Link>
                         </div>

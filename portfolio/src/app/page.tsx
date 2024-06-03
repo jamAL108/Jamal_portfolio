@@ -177,7 +177,7 @@ export default function Home() {
             <h2 className=" mt-[80px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
           </div>
           <Projects />
-          <h2 className="bl:hidden mt-[30px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
+          <h2 className="bl:hidden mt-[15px]">See a list of all my projects <Link href={'/projects'} className="text-main hover:underline">On my projects page</Link></h2>
         </div>
       </div>
 
