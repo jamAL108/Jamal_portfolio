@@ -75,6 +75,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
+        'radialCC': 'radial-gradient(circle, rgba(78,69,228,0.9360994397759104) 0%, rgba(78,69,228,1) 35%, rgba(51,45,151,1) 100%)',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

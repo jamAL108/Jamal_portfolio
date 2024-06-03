@@ -11,6 +11,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import Boiler from '@/components/step'
 import Thankyou from "@/components/thankyou";
 import Projects from "@/components/home/projects";
+import Resume from '@/components/resume'
 
 export default function Home() {
   return (
@@ -90,9 +91,9 @@ export default function Home() {
                     Veriface
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
-                    <span className="text-slate-500 ">
+                    <span className="text-slate-500 text-sm">
                       A deepfake detection app which utilizes eye blinking, facial expressions,
-                      and lip syncing to identify deepfakes.
+                      and lip syncing to identify deepfakes with 88% accuracy.
                     </span>
                   </div>
                   <div className="w-full flex justify-between items-center mt-1">
@@ -114,9 +115,8 @@ export default function Home() {
                     Vidchat AI
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
-                    <span className="text-slate-500 ">
-                      A deepfake detection app which utilizes eye blinking, facial expressions,
-                      and lip syncing to identify deepfakes.
+                    <span className="text-slate-500 text-sm">
+                    VidChat AI transforms YouTube videos into interactive experiences, allowing users to enter a link or query, suggest videos, and chat.
                     </span>
                   </div>
                   <div className="w-full flex justify-between items-center mt-1">
@@ -140,9 +140,8 @@ export default function Home() {
                     Soulmind
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
-                    <span className="text-slate-500 ">
-                      A deepfake detection app which utilizes eye blinking, facial expressions,
-                      and lip syncing to identify deepfakes.
+                    <span className="text-slate-500 text-sm">
+                    Fostering mental wellness with community, resources, chatbot support, calming music, and personalized YouTube integration.
                     </span>
                   </div>
                   <div className="w-full flex justify-between items-center mt-1">
@@ -164,9 +163,8 @@ export default function Home() {
                     Meta tunes
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
-                    <span className="text-slate-500 ">
-                      A deepfake detection app which utilizes eye blinking, facial expressions,
-                      and lip syncing to identify deepfakes.
+                    <span className="text-slate-500 text-sm">
+                    A music player app offering personalized playlists and public sharing, fostering a vibrant community of music enthusiasts worldwide.
                     </span>
                   </div>
                   <div className="w-full flex justify-between items-center mt-1">
@@ -188,6 +186,7 @@ export default function Home() {
         <div className="base:w-full bl:w-[90%] overflow-hidden flex flex-col items-center gap-10 ">
           <Boiler />
           <Thankyou />
+          <Resume/>
         </div>
       </div>
 

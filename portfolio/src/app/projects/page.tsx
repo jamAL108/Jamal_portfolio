@@ -3,74 +3,86 @@ import Boiler from '@/components/step'
 import Thankyou from '@/components/thankyou'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react';
-
+import ResumeComp from '@/components/resume'
+import Link from 'next/link'
 
 const Page = () => {
 
   const data = [
     {
-        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/veriface.png",
-        name: "Veriface",
-        width: 45,
-        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-       and lip syncing to identify deepfakes.`,
-       link:"https://github.com/jamAL108/veriface_nextjs"
-    }, {
-        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
-        name: "VidchatAI",
-        width: 45,
-        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`,
-        link:"https://github.com/jamAL108/StudyHub"
-    }, {
-        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
-        name: "Soulmind",
-        width: 95,
-        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`,
-        link:"https://github.com/jamAL108/soulmind"
-    }, {
-        coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
-        name: "Meta-tunes",
-        width: 28,
-        description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`,
-        link:"https://github.com/jamAL108/MetaTunes"
-    },
-    {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/veriface.png",
       name: "Veriface",
       width: 45,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-     and lip syncing to identify deepfakes.`,
-     link:"https://github.com/jamAL108/veriface_nextjs"
-  }, {
+       and lip syncing to identify deepfakes with 88% accuracy.`,
+      link: "https://github.com/jamAL108/veriface_nextjs"
+    }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
       name: "VidchatAI",
       width: 45,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-      and lip syncing to identify deepfakes.`,
-      link:"https://github.com/jamAL108/StudyHub"
-  }, {
+        and lip syncing to identify deepfakes.`,
+      link: "https://github.com/jamAL108/StudyHub"
+    }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
       name: "Soulmind",
       width: 95,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-      and lip syncing to identify deepfakes.`,
-      link:"https://github.com/jamAL108/soulmind"
-  }, {
+        and lip syncing to identify deepfakes.`,
+      link: "https://github.com/jamAL108/soulmind"
+    }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
       name: "Meta-tunes",
       width: 28,
       description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-      and lip syncing to identify deepfakes.`,
-      link:"https://github.com/jamAL108/MetaTunes"
-  }
-]
+        and lip syncing to identify deepfakes.`,
+      link: "https://github.com/jamAL108/MetaTunes"
+    }, {
+      coverImage: "/images/neurobhojan.png",
+      name: "Neuro Bhojan",
+      width: 45,
+      description: `A platform that combats hunger and food waste by enabling users and restaurants to easily donate food without commuting to NGOs or other locations.`,
+      link: "https://github.com/jamAL108/HackThisFall"
+    }, {
+      coverImage: "/images/cat.png",
+      name: "Student Result Management",
+      width: 42,
+      description: `A comprehensive system for managing student marksheets and attendance, with advanced admin controls, faculty management, and automated result generation.`,
+      link: "https://github.com/jamAL108/mark-evaluation"
+    },
+    {
+      coverImage: "/images/cat.png",
+      name: "N note",
+      width: 42,
+      description: `Simplify your life with efficient note-taking, vibrant backgrounds, 20+ font options, pinning, archiving, and 28-day access to deleted notes. Built with React, Redux, Node, and MongoDB.`,
+      link: "https://github.com/jamAL108/nNote"
+    },
+    {
+      coverImage: "/images/cat.png",
+      name: "Facial Attendance system",
+      width: 42,
+      description: `Attendance system for students using face detection , where student's face is stored in database and during lecture teacher can record attendane which will be marked in database`,
+      link: "https://github.com/jamAL108/attendance_FaceDetection"
+    },
+    {
+      coverImage: "/images/cat.png",
+      name: "Vehicle speed detection",
+      width: 42,
+      description: `A Python app , which will detect vechiles speeds , total vehicle in and out through a certain point using openCV algorithm and deep learning algorithm.`,
+      link: "https://github.com/jamAL108/vehicle-speed-detection"
+    },
+    {
+      coverImage: "/images/cat.png",
+      name: "College No Dues Form",
+      width: 42,
+      description: `A MERN Stack app to streamline the process of no dues appliucation form through online . It is associated with my college and is currently operational on the college server.`,
+      link: "https://github.com/jamAL108/noDuesForm_React"
+    }
+  ]
 
   return (
     <div className="bl:ml-[100px] !overflow-x-hidden !overflow-y-auto  base:w-full bl:w-[calc(100%_-_120px)] flex base:flex-col bl:flex-row ">
-      <div className="base:w-full bl:w-[72%] flex flex-col items-center bl:px-8   overflow-x-hidden">
+      <div className="base:w-full bl:w-[72%] bl:pb-[100px] flex flex-col items-center bl:px-8   overflow-x-hidden">
         <div className='w-full px-6 mt-[7rem]'>
           <h1 className='text-5xl font-[660]'>My Projects</h1>
         </div>
@@ -82,11 +94,15 @@ const Page = () => {
               <h1 className='text-xl font-[660] mt-0.5'>{item.name}</h1>
               <p className='text-muted-foreground text-sm'>{item.description}</p>
               <div className='w-full flex items-center justify-end'>
-                <ArrowRight className='w-6 h-6 text-main hover:translate-x-1 cursor-pointer' />
+                <Link href={item.link}>
+                  <ArrowRight className='w-6 h-6 text-main hover:translate-x-1 cursor-pointer' />
+                </Link>
               </div>
             </div>
           ))}
         </div>
+
+        <h2 className='text-md w-full text-left px-5'>And Many unfinished projects <span className='text-2xl'>😂</span></h2>
 
       </div>
 
@@ -94,6 +110,7 @@ const Page = () => {
       base:pt-[6rem] bl:pt-40'>
         <Boiler />
         <Thankyou />
+        <ResumeComp />
       </div>
     </div>
   )
