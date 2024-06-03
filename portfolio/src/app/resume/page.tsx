@@ -53,7 +53,8 @@ const Page = () => {
                   <p className='text-muted-foreground text-xs'>September 2019 · May 2021</p>
                   <h1 className='text-lg font-[660]'>High school Education</h1>
                   <h2 className='text-md font-[500]'>SIES High School</h2>
-                  <p className='text-muted-foreground text-[0.76rem] '>Completing 12th standard at SIES High School, Matunga, with notable successes: achieving <span className='text-foreground'>80%</span> in the 10th public exam and maintaining a commendable <span className='text-foreground'>90%</span> throughout high school.</p>
+                  <p className='text-muted-foreground text-[0.76rem] '>
+Completed 12th standard at SIES High School, Matunga, with notable successes: achieved  <span className='text-foreground'>80%</span> in the 10th public exam and maintained a commendable <span className='text-foreground'>90%</span> throughout high school.</p>
                 </div>
               </div>
             </div>
