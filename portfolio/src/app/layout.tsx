@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     icon: [
       {
         media: '(prefers-color-scheme: light)',
-        url: '/images/JamalPhoto.jpg',
-        href: '/images/JamalPhoto.jpg',
+        url: 'https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/JamalPhoto.jpg',
+        href: 'https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/JamalPhoto.jpg',
       },
       {
         media: '(prefers-color-scheme: dark)',
-        url: '/images/JamalPhoto.jpg',
-        href: '/images/JamalPhoto.jpg',
+        url: 'https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/JamalPhoto.jpg',
+        href: 'https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/JamalPhoto.jpg',
       },
     ],
   },
