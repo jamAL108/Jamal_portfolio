@@ -20,22 +20,19 @@ const Page = () => {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/vidchat.png",
       name: "VidchatAI",
       width: 45,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`,
+      description: `VidChat AI transforms YouTube videos into interactive experiences, allowing users to enter a link or query, suggest videos, and chat.`,
       link: "https://github.com/jamAL108/StudyHub"
     }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
       name: "Soulmind",
       width: 95,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`,
+      description: `Fostering mental wellness with community, resources, chatbot support, calming music, and personalized YouTube integration.`,
       link: "https://github.com/jamAL108/soulmind"
     }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/metatunes.png",
       name: "Meta-tunes",
       width: 28,
-      description: `A deepfake detection app which utilizes eye blinking, facial expressions,
-        and lip syncing to identify deepfakes.`,
+      description: `A music player app offering personalized playlists and public sharing, fostering a vibrant community of music enthusiasts worldwide.`,
       link: "https://github.com/jamAL108/MetaTunes"
     }, {
       coverImage: "/images/neurobhojan.png",
