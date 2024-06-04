@@ -12,6 +12,7 @@ import Boiler from '@/components/step'
 import Thankyou from "@/components/thankyou";
 import Projects from "@/components/home/projects";
 import Resume from '@/components/resume'
+import { SiLeetcode } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -39,8 +40,8 @@ export default function Home() {
           <Link href={'https://linkedin.com/in/jamal108'}>
             <SlSocialLinkedin className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
-          <Link href={'https://instagram.com/jamal.tsx'}>
-            <FaInstagram className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
+          <Link href={'https://leetcode.com/jamal108'}>
+            <SiLeetcode className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
           </Link>
           <Link href={'mailto:jamalmohideen971@gmail.com'}>
             <HiOutlineMailOpen className="text-muted-foreground h-8 w-8 transform duration-150 ease-in-out hover:scale-110" />
@@ -56,17 +57,17 @@ export default function Home() {
           <div className="w-full flex flex-wrap py-3 gap-8">
             <div className="w-[360px] h-[220px] bg-[url('/images/hackthisfall.jpg')] transform duration-300 ease-out rotate-[2deg] hover:rotate-[0deg] relative bg-cover">
               <div className="absolute z-[0] inset-0 bg-black opacity-60"></div>
-              <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660] text-white ">HackThisFall</h1>
-              <div className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px]">
-
-              </div>
+              <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660] text-white ">HackThisFall 2024</h1>
+              <Link href={'https://linkedin.com/in/jamal108'} className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px] flex justify-center items-center">
+                <Image src='/images/linkedinL.png' alt='dsc' width={22} height={22} />
+              </Link>
             </div>
 
             <div className="w-[360px] h-[220px] bg-[url('/images/hackthisfall.jpg')] transform duration-300 ease-out rotate-[-2deg] hover:rotate-[0deg] relative bg-cover">
               <div className="absolute z-[0] inset-0 bg-black opacity-60"></div>
               <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660] text-white ">HackThisFall</h1>
-              <div className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px]">
-
+              <div className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px] flex justify-center items-center">
+              <Image src='/images/linkedinL.png' alt='dsc' width={22} height={22} />
               </div>
             </div>
 
