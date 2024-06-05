@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from '@/components/navbar'
 import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Jamal Mydeen",
@@ -44,6 +45,7 @@ export default function RootLayout({
             <div className="w-[min(1300px,100vw)] flex !overflow-x-hidden ">
               <Navbar />
               {children}
+              <Analytics />
             </div>
           </div>
         </ThemeProvider>
