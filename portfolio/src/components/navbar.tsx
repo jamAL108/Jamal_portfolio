@@ -32,7 +32,7 @@ const Navbar = () => {
                 <Link href={'/'}>
                     <BiHomeAlt2 className={`${pathname !== null && pathname === '/' ? 'text-main' : 'hover:text-foreground text-muted-foreground'} cursor-pointer transition-all duration-200 ease-in-out`} size={28} />
                 </Link>
-                <Link href={'https://qwertymno.vercel.app/'}>
+                <Link href={'https://blogs.jamalmydeen.xyz/'}>
                     <MdOutlineWorkOutline className={`${pathname !== null && pathname.includes('/blogs') === true ? 'text-main' : 'hover:text-foreground text-muted-foreground'} cursor-pointer transition-all duration-200 ease-in-out`} size={26} />
                 </Link>
                 <Link href={'/projects'}>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <Link href={'/'}>
                     <BiHomeAlt2 className={`${pathname !== null && pathname === '/' ? 'text-main' : 'hover:text-foreground text-muted-foreground'} cursor-pointer transition-all duration-200 ease-in-out`} size={26} />
                 </Link>
-                <Link href={'https://qwertymno.vercel.app/'}>
+                <Link href={'https://blogs.jamalmydeen.xyz/'}>
                     <MdOutlineWorkOutline className={`${pathname !== null && pathname.includes('/blogs') === true ? 'text-main' : 'hover:text-foreground text-muted-foreground'} cursor-pointer transition-all duration-200 ease-in-out`} size={24} />
                 </Link>
                 <Link href={'/projects'}>
