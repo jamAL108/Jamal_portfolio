@@ -58,7 +58,7 @@ export default function Home() {
             <div className="w-[360px] h-[220px] bg-[url('/images/hackthisfall.jpg')] transform duration-300 ease-out rotate-[2deg] hover:rotate-[0deg] relative bg-cover">
               <div className="absolute z-[0] inset-0 bg-black opacity-60"></div>
               <h1 className="text-2xl absolute !top-[55px] left-[30px] z-[10000] font-[660] text-white ">HackThisFall 2024</h1>
-              <Link href={'https://linkedin.com/in/jamal108'} className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px] flex justify-center items-center">
+              <Link href={'https://www.linkedin.com/posts/blazerahim_hackathon-hackthisfall-teamcollaboration-ugcPost-7164673821533237250-z5j0?utm_source=share&utm_medium=member_desktop'} className="w-[40px] h-[40px] bg-white rounded-full absolute bottom-[20px] right-[15px] flex justify-center items-center">
                 <Image src='/images/linkedinL.png' alt='dsc' width={22} height={22} />
               </Link>
             </div>
