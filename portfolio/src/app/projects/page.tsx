@@ -21,7 +21,7 @@ const Page = () => {
       name: "VidchatAI",
       width: 45,
       description: `VidChat AI transforms YouTube videos into interactive experiences, allowing users to enter a link or query, suggest videos, and chat.`,
-      link: "https://github.com/jamAL108/study-hub
+      link: "https://github.com/jamAL108/study-hub"
     }, {
       coverImage: "https://jvpehndoafryctlriuse.supabase.co/storage/v1/object/public/qwertymno/soulmind.png",
       name: "Soulmind",
