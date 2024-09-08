@@ -11,7 +11,7 @@ export default function BackgroundGradientAnimationDemo() {
 
     const handleClick = async () => {
         try {
-            await navigator.clipboard.writeText('jamalmohiden971@gmail.com');
+            await navigator.clipboard.writeText('jamalmydeen112@gmail.com');
             const fragment: JSX.Element[] = [];
             for (let i = 0; i < 100; i++) {
                 const styles = {
