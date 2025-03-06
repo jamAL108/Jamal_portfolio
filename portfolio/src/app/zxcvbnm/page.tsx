@@ -26,6 +26,7 @@ const Page = () => {
     const [apiBool, setApiBool] = useState<boolean>(false)
 
     const check = async () => {
+            console.log(process.env.NEXT_PUBLIC_USER)
             setApiBool(true)
             if(username!=process.env.NEXT_PUBLIC_USER){
                 setApiBool(false)
