@@ -64,3 +64,23 @@ const getFileExtension = (filename: string): string => {
     const lastDotIndex = filename.lastIndexOf(".");
     return lastDotIndex !== -1 ? filename.slice(lastDotIndex + 1) : ""; // Return an empty string if no extension
 };
+
+
+export const getSignedUrl= async(bucket: string, filePath: string) =>{
+    const supabase = clientConnectionWithSupabase()
+    const { data, error } = await supabase
+        .storage
+        .from(bucket)
+        .createSignedUrl(filePath, 60); // Link expires in 60 seconds
+
+    if (error) {
+        console.error('Error getting signed URL:', error);
+        return null;
+    }
+    console.log(data)
+    return data.signedUrl;
+}
+
+// // Example usage
+// getSignedUrl('documents', 'user123/file.pdf').then(console.log);
+

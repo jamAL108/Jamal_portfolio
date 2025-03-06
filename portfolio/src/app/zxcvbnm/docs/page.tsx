@@ -28,6 +28,7 @@ import {
 import { Skeleton } from '@/components/ui/skeleton'
 import RowComponent from './RowComponent'
 import { Input } from "@/components/ui/input"
+import { SignOutServer } from '@/auth'
 
 
 const Page = () => {
@@ -78,8 +79,8 @@ const Page = () => {
     }
 
 
-    const logoutFunction = () => {
-
+    const logoutFunction = async () => {
+        await SignOutServer()
     }
 
     const fileUploadFunction = (e: any) => {
@@ -175,7 +176,7 @@ const Page = () => {
                         <CardHeader className='flex-row justify-between base:px-0 bl:px-6'>
                             <div className='flex flex-col gap-1'>
                                 <CardTitle className="text-2xl">Welcome back Jamal</CardTitle>
-                                <CardDescription className='flex items-center gap-2'>Sign in to your account <img src='/images/catmeow.png' onClick={logoutFunction} className='w-5 h-5 cursor-pointer ' /></CardDescription>
+                                <CardDescription className='flex items-center gap-2'>How's life going ? <img src='/images/catmeow.png' onClick={logoutFunction} className='w-5 h-5 cursor-pointer ' /></CardDescription>
                             </div>
                             <Button disabled={uploading} className='text-white' onClick={(e) => {
                                 e.preventDefault();

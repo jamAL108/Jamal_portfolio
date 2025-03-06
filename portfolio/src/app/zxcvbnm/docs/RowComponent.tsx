@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React,{ useState } from 'react'
 import {
     TableCell,
     TableRow,
@@ -13,11 +13,13 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { MoreHorizontal, BotMessageSquare, SquareArrowOutUpRight, Trash2 } from 'lucide-react'
 import Link from 'next/link'
-import { DeleteDocFromSupabase } from '@/api'
+import { DeleteDocFromSupabase, getSignedUrl } from '@/api'
 
 
 const RowComponent: React.FC<any> = (props) => {
     const { AllFiles, setFiles,  user, file , setTempFiles} = props
+    const [href, setHref] = useState<string | null>(null);
+
         const formatDate = (ts: string): string => {
             const date = new Date(ts);
             const year = date.getFullYear();
@@ -41,6 +43,12 @@ const RowComponent: React.FC<any> = (props) => {
                 alert("ERROR deleting files")            
             }
        }
+
+
+       const handleClick = async () => {
+        const url = await getSignedUrl('Documents',`Jamal_Documents/${file.id}.${file.extension}`)
+        setHref(url);
+      };
 
 
        const getFileTypeImage = (extension: string): string => {
